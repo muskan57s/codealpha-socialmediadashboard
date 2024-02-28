@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+<!--fontawesome--> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+        <div class="grid-container">
+
+            <!-- Header -->
+            <header class="header">
+             <div class="menu-icon" onclick="openSidebar()">
+                <i class="fa-solid fa-bars" style="color:brown ;font-size: larger"></i>
+             </div>
+            <div class="left">
+              Search  <i class="fa-solid fa-magnifying-glass" style="color:brown ;font-size: larger"></i>
+            </div>
+            <div class="right">
+              <i class="fa-regular fa-bell" style="color:brown ;font-size: larger"></i>
+              <i class="fa-regular fa-envelope" style="color:brown ;font-size: larger"></i>
+              <i class="fa-regular fa-circle-user" style="color:brown ;font-size: larger"></i>
+              
+            </div>
+            </header>
+      
+            <!-- Sidebar -->
+            <aside id="sidebar">
+             <div class="sidebar-title">
+                <h2>LOGO</h2>
+
+                <i class="fa-solid fa-x" onclick="closebar()"></i>
+              </div>
+             <ul>
+              <li>
+                <i class="fa-solid fa-table-columns" ></i> Dashboard
+              </li>
+              <li> <i class="fa-solid fa-cash-register"></i> Leaderboard</li>
+              <li> <i class="fa-solid fa-clock-rotate-left"></i> Analytics</li>
+              <li> <i class="fa-regular fa-message"></i> Messages</li>
+              <li><i class="fa-solid fa-circle-info"></i> About</li>
+              <li> <i class="fa-solid fa-gear"></i> Settings</li>
+              <li style="color:black"  >Logout</li>
+            </ul>
+            </aside>
+            <!-- End Sidebar -->
+      
+            <!-- Main -->
+            <main class="main-container">
+              <div class="main-title">
+                <h2>DASHBOARD</h2>
+              </div>
+      
+              <div class="main-card">
+      
+                <div class="card">
+                  <div class="card-inner">
+                    <h2>LIKES</h2>
+                    <i class="fa-regular fa-thumbs-up" style="font-size:2rem"></i>
+                  </div>
+                  <h1>5,001</h1>
+                </div>
+      
+               <div class="card">
+                  <div class="card-inner">
+                    <h2>FOLLOWERS</h2>
+                    <i class="fa-solid fa-users" style="font-size:2rem"></i>
+                  </div>
+                  <h1>2,881</h1>
+                </div>
+      
+               <div class="card">
+                  <div class="card-inner">
+                    <h2>MESSAGES</h2>
+                    <i class="fa-regular fa-message" style="font-size:2rem"></i>
+                  </div>
+                  <h1>200</h1>
+                </div>
+      
+              </div>
+      
+              <div class="products">
+      
+                <div class="product-card">
+                  <h2 class="product-description">Latest Updates</h2>
+                  <p class="text-secondary">
+                  Check all the latest upates here.
+                  </p>
+                  <button type="button" class="product-button">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+      
+              
+              </div>
+      
+              </div>
+            </main>     
+          </div>
+    
+
+    <script src="boardscript.js"></script>
+</body>
+</html>
